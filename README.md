@@ -144,4 +144,6 @@ token-optimizer/
 
 ## License
 
-MIT
+[AGPL-3.0](LICENSE.md) for personal and open-source use.
+
+For commercial use (any product or service that generates revenue), a separate commercial license is required. Contact: iamlexosi@gmail.com
