@@ -1,0 +1,6 @@
+target/
+config.toml
+state.json
+*.pdb
+*.d
+Token Optimizer.png

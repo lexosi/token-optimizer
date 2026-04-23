@@ -1,0 +1,22 @@
+[package]
+name = "token-optimizer"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "token-optimizer"
+path = "src/main.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+rdev = "0.5"
+arboard = "3"
+ureq = "2"
+serde_json = "1"
+log = "0.4"
+env_logger = "0.11"
+chrono = "0.4"
+tray-icon = "0.14"
+image = "0.25"
+windows-sys = { version = "0.52", features = ["Win32_UI_WindowsAndMessaging", "Win32_Foundation"] }

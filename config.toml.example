@@ -1,0 +1,28 @@
+# token-optimizer configuration
+# Copy this file to config.toml (next to the binary) and adjust as needed.
+
+# Base URL of the LM Studio local server
+lm_studio_url = "http://localhost:1234"
+
+# Model ID as shown in LM Studio (must be loaded in LM Studio)
+model = "meta-llama-3-8b-instruct"
+
+# Hotkey that triggers compression.
+# Supported formats: F1-F24, Alt+<key>, Ctrl+<key>
+# F13-F24 are common on gaming mice / macro keyboards.
+hotkey = "F14"
+
+# When true, automatically trigger when clipboard text exceeds auto_threshold_chars.
+auto_trigger = false
+
+# Character count threshold for auto-trigger mode.
+auto_threshold_chars = 2000
+
+# System prompt sent to the LLM before the clipboard content.
+system_prompt = "You are a lossless text compressor for developer content. Output ONLY the compressed text, nothing else. Rules: 1) Keep all error codes, file paths, line numbers and column numbers. 2) Keep all variable names, type names and function names exactly. 3) Remove decorative characters like arrows, pipes, carets and repeated dashes used only for visual formatting. 4) Remove lines that only contain whitespace or visual separators. 5) Keep the error message, the affected lines of code, and the location references. No explanations, no preamble."
+
+# Maximum tokens the LLM may generate in its response.
+max_tokens = 512
+
+# When true, write logs to token-optimizer.log next to the binary in addition to stdout.
+log_to_file = false
